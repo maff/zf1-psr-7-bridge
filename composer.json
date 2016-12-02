@@ -20,5 +20,9 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
+    },
+    "suggest": {
+        "psr/http-message-implementation": "To use the HttpFoundation factory",
+        "zendframework/zend-diactoros": "To use the Zend Diactoros factory"
     }
 }
