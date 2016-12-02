@@ -9,5 +9,13 @@
             "email": "mathias@ailoo.net"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Maff\\Zend1MvcPsrMessageBridge\\": ""
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
 }
