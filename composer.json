@@ -1,0 +1,13 @@
+{
+    "name": "maff/zend-1-psr-7-bridge",
+    "description": "Zend Framework 1 to PSR-7 bridge",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mathias Geat",
+            "email": "mathias@ailoo.net"
+        }
+    ],
+    "require": {}
+}
