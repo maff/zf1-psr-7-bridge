@@ -11,12 +11,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Maff\\Zend1MvcPsrMessageBridge\\": "src/"
+            "maff\\Zend1MvcPsrMessageBridge\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Maff\\Zend1MvcPsrMessageBridge\\Test\\": "test/"
+            "maff\\Zend1MvcPsrMessageBridge\\Test\\": "test/"
         }
     },
     "require": {

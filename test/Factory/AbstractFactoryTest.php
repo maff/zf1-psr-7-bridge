@@ -1,6 +1,6 @@
 <?php
 
-namespace Maff\Zend1MvcPsrMessageBridge\Test\Factory;
+namespace maff\Zend1MvcPsrMessageBridge\Test\Factory;
 
 use PHPUnit\Framework\TestCase;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Maff\Zend1MvcPsrMessageBridge\Test\Factory;
+namespace maff\Zend1MvcPsrMessageBridge\Test\Factory;
 
-use Maff\Zend1MvcPsrMessageBridge\Factory\ZendMessageFactory;
-use Maff\Zend1MvcPsrMessageBridge\ZendMessageFactoryInterface;
+use maff\Zend1MvcPsrMessageBridge\Factory\ZendMessageFactory;
+use maff\Zend1MvcPsrMessageBridge\ZendMessageFactoryInterface;
 use Zend\Diactoros\Response;
 use Zend\Diactoros\Stream;
 

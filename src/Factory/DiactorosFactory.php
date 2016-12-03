@@ -1,8 +1,8 @@
 <?php
 
-namespace Maff\Zend1MvcPsrMessageBridge\Factory;
+namespace maff\Zend1MvcPsrMessageBridge\Factory;
 
-use Maff\Zend1MvcPsrMessageBridge\PsrMessageFactoryInterface;
+use maff\Zend1MvcPsrMessageBridge\PsrMessageFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Maff\Zend1MvcPsrMessageBridge\Factory;
+namespace maff\Zend1MvcPsrMessageBridge\Factory;
 
-use Maff\Zend1MvcPsrMessageBridge\ZendMessageFactoryInterface;
+use maff\Zend1MvcPsrMessageBridge\ZendMessageFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 

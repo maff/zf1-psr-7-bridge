@@ -1,12 +1,11 @@
 <?php
 
-namespace Maff\Zend1MvcPsrMessageBridge\Test\Factory;
+namespace maff\Zend1MvcPsrMessageBridge\Test\Factory;
 
-use Maff\Zend1MvcPsrMessageBridge\Factory\DiactorosFactory;
-use Maff\Zend1MvcPsrMessageBridge\PsrMessageFactoryInterface;
+use maff\Zend1MvcPsrMessageBridge\Factory\DiactorosFactory;
+use maff\Zend1MvcPsrMessageBridge\PsrMessageFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Zend\Diactoros\Response;
-use Zend\Diactoros\Response\TextResponse;
 
 class DiactorosFactoryTest extends AbstractFactoryTest
 {
