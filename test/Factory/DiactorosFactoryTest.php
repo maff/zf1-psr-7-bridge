@@ -37,13 +37,13 @@ class DiactorosFactoryTest extends AbstractFactoryTest
             }
         }
 
-        $psrRequest = $this->factory->createResponse($response);
+        $psrResponse = $this->factory->createResponse($response);
 
-        $this->assertEquals($code, $psrRequest->getStatusCode());
-        $this->assertEquals($content, $psrRequest->getBody()->__toString());
+        $this->assertEquals($code, $psrResponse->getStatusCode());
+        $this->assertEquals($content, $psrResponse->getBody()->__toString());
 
         foreach ($headers as $name => $values) {
-            $this->assertEquals($values, $psrRequest->getHeader($name));
+            $this->assertEquals($values, $psrResponse->getHeader($name));
         }
     }
 }
