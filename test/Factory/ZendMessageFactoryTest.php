@@ -17,7 +17,8 @@ class ZendMessageFactoryTest extends AbstractFactoryTest
     protected function setUp()
     {
         // mock the buildResponse method and create a zend response instance which doesn't set/check
-        // headers via PHP builtins (fails in CLI mode)
+        // headers via PHP builtins (fails in CLI mode) - specifically it calls headers_sent to check if headers
+        // were already sent
         $mock = $this->getMockBuilder(ZendMessageFactory::class)
             ->setMethods(['buildResponse'])
             ->getMock();
