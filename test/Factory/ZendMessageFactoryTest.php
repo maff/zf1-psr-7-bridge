@@ -53,6 +53,8 @@ class ZendMessageFactoryTest extends AbstractFactoryTest
 
         $zendResponse = $this->factory->createResponse($response);
 
+        $this->assertInstanceOf(\Zend_Controller_Response_Http::class, $zendResponse);
+
         $this->assertEquals($code, $zendResponse->getHttpResponseCode());
         $this->assertEquals($content, $zendResponse->getBody());
 

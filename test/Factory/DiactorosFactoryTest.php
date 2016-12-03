@@ -4,6 +4,9 @@ namespace Maff\Zend1MvcPsrMessageBridge\Test\Factory;
 
 use Maff\Zend1MvcPsrMessageBridge\Factory\DiactorosFactory;
 use Maff\Zend1MvcPsrMessageBridge\PsrMessageFactoryInterface;
+use Psr\Http\Message\ResponseInterface;
+use Zend\Diactoros\Response;
+use Zend\Diactoros\Response\TextResponse;
 
 class DiactorosFactoryTest extends AbstractFactoryTest
 {
@@ -38,6 +41,9 @@ class DiactorosFactoryTest extends AbstractFactoryTest
         }
 
         $psrResponse = $this->factory->createResponse($response);
+
+        $this->assertInstanceOf(ResponseInterface::class, $psrResponse);
+        $this->assertInstanceOf(Response::class, $psrResponse);
 
         $this->assertEquals($code, $psrResponse->getStatusCode());
         $this->assertEquals($content, $psrResponse->getBody()->__toString());
