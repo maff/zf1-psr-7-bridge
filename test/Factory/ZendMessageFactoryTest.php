@@ -22,10 +22,12 @@ class ZendMessageFactoryTest extends AbstractFactoryTest
             ->setMethods(array('buildResponse'))
             ->getMock();
 
+        $self = $this;
+
         $mock
             ->method('buildResponse')
-            ->willReturnCallback(function () {
-                return $this->buildZendResponseMock();
+            ->willReturnCallback(function () use ($self) {
+                return $self->buildZendResponseMock();
             });
 
         $this->factory = $mock;
