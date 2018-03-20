@@ -2,10 +2,9 @@
 
 namespace RstGroup\Zend1MvcPsrMessageBridge\Test\Factory;
 
-use RstGroup\Zend1MvcPsrMessageBridge\Factory\ZendMessageFactory;
+use Asika\Http\Response;
+use Asika\Http\Stream\Stream;
 use RstGroup\Zend1MvcPsrMessageBridge\ZendMessageFactoryInterface;
-use Zend\Diactoros\Response;
-use Zend\Diactoros\Stream;
 
 class ZendMessageFactoryTest extends AbstractFactoryTest
 {

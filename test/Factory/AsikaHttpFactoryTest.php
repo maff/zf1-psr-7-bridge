@@ -2,10 +2,10 @@
 
 namespace RstGroup\Zend1MvcPsrMessageBridge\Test\Factory;
 
-use RstGroup\Zend1MvcPsrMessageBridge\Factory\DiactorosFactory;
+use RstGroup\Zend1MvcPsrMessageBridge\Factory\AsikaHttpFactory;
 use RstGroup\Zend1MvcPsrMessageBridge\PsrMessageFactoryInterface;
 
-class DiactorosFactoryTest extends AbstractFactoryTest
+class AsikaHttpFactoryTest extends AbstractFactoryTest
 {
     /**
      * @var PsrMessageFactoryInterface
@@ -14,7 +14,7 @@ class DiactorosFactoryTest extends AbstractFactoryTest
 
     protected function setUp()
     {
-        $this->factory = new DiactorosFactory();
+        $this->factory = new AsikaHttpFactory();
     }
 
     /**
@@ -40,7 +40,7 @@ class DiactorosFactoryTest extends AbstractFactoryTest
         $psrResponse = $this->factory->createResponse($response);
 
         $this->assertInstanceOf('Psr\Http\Message\ResponseInterface', $psrResponse);
-        $this->assertInstanceOf('Zend\Diactoros\Response', $psrResponse);
+        $this->assertInstanceOf('Asika\Http\Response', $psrResponse);
 
         $this->assertEquals($code, $psrResponse->getStatusCode());
         $this->assertEquals($content, $psrResponse->getBody()->__toString());
