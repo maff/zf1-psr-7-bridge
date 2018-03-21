@@ -44,7 +44,7 @@ abstract class AbstractFactoryTest extends TestCase
     /**
      * @return \Zend_Controller_Response_Http
      */
-    protected function buildZendResponseMock()
+    public function buildZendResponseMock()
     {
         $mock = $this->getMockBuilder('Zend_Controller_Response_Http')
             ->setMethods(array('canSendHeaders'))
