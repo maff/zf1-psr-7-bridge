@@ -60,6 +60,7 @@ class ZendMessageFactoryTest extends AbstractFactoryTest
         $this->assertEquals($content, $zendResponse->getBody());
 
         $zendHeaders = array();
+
         foreach ($zendResponse->getHeaders() as $header) {
             $zendHeaders[$header['name']][] = $header['value'];
         }
