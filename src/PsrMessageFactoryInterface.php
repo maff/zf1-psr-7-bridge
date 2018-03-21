@@ -1,6 +1,6 @@
 <?php
 
-namespace maff\Zend1MvcPsrMessageBridge;
+namespace RstGroup\Zend1MvcPsrMessageBridge;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
