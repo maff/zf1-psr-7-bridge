@@ -1,5 +1,5 @@
 {
-    "name": "RstGroup/zf1-psr-7-bridge",
+    "name": "rstgroup/zf1-psr-7-bridge",
     "description": "Zend Framework 1 to PSR-7 bridge",
     "type": "library",
     "license": "MIT",
