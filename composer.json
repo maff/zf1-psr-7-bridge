@@ -22,7 +22,8 @@
     "require": {
         "php": ">=5.3",
         "psr/http-message": "^1.0",
-        "asika/http": "^1.0"
+        "asika/http": "^1.0",
+        "ralouphie/getallheaders": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8.36",
