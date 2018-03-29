@@ -1,22 +1,16 @@
 language: php
 
+dist: precise
 php:
-  - '5.6'
-  - '7.0'
-  - '7.1'
-  - nightly
-  - hhvm
+  - '5.3'
 
 cache:
   directories:
     - $HOME/.composer/cache
     - vendor
 
-before_install:
-  - composer self-update
-
 install:
-  - travis_retry composer install --no-interaction --ignore-platform-reqs
+  - travis_retry composer install --no-interaction
   - composer info -i
 
 script:
